@@ -30,7 +30,6 @@
         android:layout_marginTop="6dp"
         android:layout_width="130dp"
         android:layout_height="40dp"
-        android:textSize="12sp"
         android:layout_toRightOf="@+id/nama"/>
 
     <TextView
@@ -75,19 +74,28 @@
         android:layout_below="@+id/sp_jk"
         android:layout_toRightOf="@+id/alamat"
         android:layout_marginTop="5dp"
-        android:textSize="12sp"
         />
 
     <Button
-        android:onClick="ShowResult"
         android:id="@+id/btn_Submit"
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_below="@+id/alamat"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="130dp"
         android:background="@drawable/border_button"
         android:text="Submit"
+        />
+
+    <Button
+        android:id="@+id/btn_Reset"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btn_Submit"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border_button"
+        android:text="Reset"
         />
 
 
