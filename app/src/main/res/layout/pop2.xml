@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="375dp"
+    android:background="@color/orange"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="PENDAFTARAN DOSEN"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_below="@+id/judul"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Nama"/>
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_below="@+id/judul"
+        android:layout_marginTop="6dp"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/nama"/>
+
+    <TextView
+        android:id="@+id/jenis_kelamin"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/nama"
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Jenis Kelamin"/>
+
+    <Spinner
+        android:id="@+id/sp_jk"
+        android:layout_width="138dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/et_nama"
+        android:layout_toRightOf="@+id/jenis_kelamin"
+        android:layout_marginTop="-3dp"
+        android:entries="@array/jenis_k"
+        />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_marginLeft="10dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Alamat"
+        android:layout_below="@+id/jenis_kelamin"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/et_alamat"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:lines="6"
+        android:scrollHorizontally="false"
+        android:gravity="top"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_jk"
+        android:layout_toRightOf="@+id/alamat"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:onClick="ShowResult"
+        android:id="@+id/btn_Submit"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/alamat"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/border_button"
+        android:text="Submit"
+        />
+
+
+</RelativeLayout>
